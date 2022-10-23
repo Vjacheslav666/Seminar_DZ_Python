@@ -16,7 +16,7 @@ for i in range(num):
     lst.append(ind)
 
 for j in lst:
-    if j not in lst_2:
+    if lst.count(j) < 2:
         lst_2.append(j)
 print(f"Список введённый пользователем равен: {lst}")
 print(f"Список без повторяющихся знаков равен: {lst_2}")
